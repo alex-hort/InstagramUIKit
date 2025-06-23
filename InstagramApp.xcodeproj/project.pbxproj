@@ -13,6 +13,7 @@
 		01E4A07B2E08D0F200906196 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4A07A2E08D0F200906196 /* FirebaseFirestore */; };
 		01E4A07D2E08D0F200906196 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4A07C2E08D0F200906196 /* FirebaseFirestoreCombine-Community */; };
 		01E4A07F2E08D0F200906196 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4A07E2E08D0F200906196 /* FirebaseStorage */; };
+		01E4A0B42E08DC3400906196 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 01E4A0B32E08DC3400906196 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,7 @@
 		01E4A06B2E08C82700906196 /* Exceptions for "InstagramApp" folder in "InstagramApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = 01E4A0582E08C82400906196 /* InstagramApp */;
 		};
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E4A0B42E08DC3400906196 /* FirebaseAnalytics in Frameworks */,
 				01E4A0792E08D0F200906196 /* FirebaseCrashlytics in Frameworks */,
 				01E4A07B2E08D0F200906196 /* FirebaseFirestore in Frameworks */,
 				01E4A0772E08D0F200906196 /* FirebaseCore in Frameworks */,
@@ -99,6 +101,7 @@
 				01E4A07A2E08D0F200906196 /* FirebaseFirestore */,
 				01E4A07C2E08D0F200906196 /* FirebaseFirestoreCombine-Community */,
 				01E4A07E2E08D0F200906196 /* FirebaseStorage */,
+				01E4A0B32E08DC3400906196 /* FirebaseAnalytics */,
 			);
 			productName = InstagramApp;
 			productReference = 01E4A0592E08C82400906196 /* InstagramApp.app */;
@@ -171,7 +174,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PS2DYKK3TY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramApp/Info.plist;
+				INFOPLIST_FILE = InstagramApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Instagram;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -199,7 +202,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PS2DYKK3TY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstagramApp/Info.plist;
+				INFOPLIST_FILE = InstagramApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Instagram;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -403,6 +406,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 01E4A0732E08D0F200906196 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		01E4A0B32E08DC3400906196 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01E4A0732E08D0F200906196 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
